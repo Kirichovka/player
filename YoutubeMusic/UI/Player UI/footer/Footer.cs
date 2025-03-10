@@ -17,6 +17,8 @@ namespace YoutubeMusic.UI.Player_UI.footer
         public Footer()
         {
             InitializeComponent();
+            OpenPlayerRequested += delegate { };
+            OpenPlayListRequested += delegate { };
         }
 
         private void PlayerButton_Click(object sender, EventArgs e)

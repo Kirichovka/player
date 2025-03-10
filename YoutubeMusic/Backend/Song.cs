@@ -5,11 +5,11 @@ namespace YoutubeMusic
 {
     public class Song
     {
-        public string Title { get; set; } // Название песни
-        public string Artist { get; set; } // Исполнитель
-        public string Lyrics { get; private set; } // Текст песни
-        public string CoverPath { get; private set; } // Обложка
-        public string FolderPath { get; private set; } // Папка с песней
+        public string Title { get; set; }
+        public string Artist { get; set; }
+        public string? Lyrics { get; private set; }
+        public string? CoverPath { get; private set; }
+        public string FolderPath { get; private set; }
 
         public Song(string title, string artist, string folderPath)
         {
@@ -40,11 +40,6 @@ namespace YoutubeMusic
                 }
             }
             CoverPath = null;
-        }
-
-        public override string ToString()
-        {
-            return $"{Artist} - {Title}";
         }
     }
 }

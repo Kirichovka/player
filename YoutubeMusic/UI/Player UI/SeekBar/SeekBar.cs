@@ -41,10 +41,9 @@ public class SeekBar : Panel
             g.FillRectangle(progressBrush, 0, 0, this.Width * progress, this.Height);
     }
 
-    private void SeekBar_MouseDown(object sender, MouseEventArgs e)
+    private void SeekBar_MouseDown(object? sender, MouseEventArgs e)
     {
         float newProgress = (float)e.X / this.Width;
         SetProgress(newProgress);
-        Console.WriteLine($"Перемотка на {newProgress * 100}%");
     }
 }

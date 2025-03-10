@@ -20,10 +20,9 @@ namespace YoutubeMusic.DataBases
                 Console.WriteLine($"Добавлен пользователь: {user.Username}");
             }
         }
-
-        public YoutubeMusic.Backend.User GetUser(string username)
+        public YoutubeMusic.Backend.User? GetUser(string username)
         {
-            return Users.Find(u => u.Username == username);
+            return Users.FirstOrDefault(u => u.Username == username);
         }
 
         public void ShowAllUsers()

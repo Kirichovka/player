@@ -44,7 +44,7 @@
             PlayerTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 17.4488564F));
             PlayerTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 102F));
             PlayerTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 8F));
-            PlayerTableLayoutPanel.Size = new Size(670, 944);
+            PlayerTableLayoutPanel.Size = new Size(670, 963);
             PlayerTableLayoutPanel.TabIndex = 0;
             // 
             // MainPlayer
@@ -52,7 +52,7 @@
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(664, 944);
+            ClientSize = new Size(664, 973);
             Controls.Add(PlayerTableLayoutPanel);
             Name = "MainPlayer";
             Text = "Player";
