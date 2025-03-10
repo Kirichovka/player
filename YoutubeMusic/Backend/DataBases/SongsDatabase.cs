@@ -7,6 +7,7 @@ namespace YoutubeMusic.DataBase
     public class SongsDatabase
     {
         public List<Song> AllSongs { get; private set; }
+        public static string DefaultCoverPath = @"C:\Users\kiril\source\repos\YoutubeMusic\YoutubeMusic\bin\Debug\net8.0-windows\default_cover.jpg"; // ✅ Дефолтная обложка
 
         public SongsDatabase(string basePath)
         {
@@ -18,7 +19,7 @@ namespace YoutubeMusic.DataBase
         {
             if (!Directory.Exists(basePath))
             {
-                Console.WriteLine("Ошибка: Папка с песнями не найдена!");
+                Console.WriteLine("❌ Ошибка: Папка с песнями не найдена!");
                 return;
             }
 
@@ -34,12 +35,12 @@ namespace YoutubeMusic.DataBase
                 }
             }
 
-            Console.WriteLine($"Загружено {AllSongs.Count} песен.");
+            Console.WriteLine($"✅ Загружено {AllSongs.Count} песен.");
         }
 
         public void ShowAllSongs()
         {
-            Console.WriteLine("Все песни:");
+            Console.WriteLine("🎵 Все песни:");
             foreach (var song in AllSongs)
             {
                 Console.WriteLine($"- {song} | Lyrics: {(song.Lyrics != null ? "✅" : "❌")} | Cover: {(song.CoverPath != null ? "✅" : "❌")}");

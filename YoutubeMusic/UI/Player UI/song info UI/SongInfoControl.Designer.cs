@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            songPictureBox = new PictureBox();
+            coverPictureBox = new PictureBox();
             songNameLabel = new Label();
             bandNameLabel = new Label();
             additionalInformationPanel = new Panel();
-            ((System.ComponentModel.ISupportInitialize)songPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)coverPictureBox).BeginInit();
             SuspendLayout();
             // 
-            // songPictureBox
+            // coverPictureBox
             // 
-            songPictureBox.Location = new Point(91, 81);
-            songPictureBox.Name = "songPictureBox";
-            songPictureBox.Size = new Size(451, 418);
-            songPictureBox.TabIndex = 0;
-            songPictureBox.TabStop = false;
+            coverPictureBox.Location = new Point(91, 81);
+            coverPictureBox.Name = "coverPictureBox";
+            coverPictureBox.Size = new Size(451, 418);
+            coverPictureBox.TabIndex = 0;
+            coverPictureBox.TabStop = false;
             // 
             // songNameLabel
             // 
@@ -80,17 +80,17 @@
             Controls.Add(additionalInformationPanel);
             Controls.Add(bandNameLabel);
             Controls.Add(songNameLabel);
-            Controls.Add(songPictureBox);
+            Controls.Add(coverPictureBox);
             Name = "SongInfoControl";
             Size = new Size(668, 758);
-            ((System.ComponentModel.ISupportInitialize)songPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)coverPictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox songPictureBox;
+        private PictureBox coverPictureBox;
         private Label songNameLabel;
         private Label bandNameLabel;
         private Panel additionalInformationPanel;
